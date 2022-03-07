@@ -72,25 +72,25 @@
                                     <constraint firstAttribute="width" constant="50" id="VIk-mb-636"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="dD4-A4-paS" userLabel="Stack View Slider">
-                                <rect key="frame" x="147" y="272" width="261" height="140"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="dD4-A4-paS" userLabel="Stack View Slider">
+                                <rect key="frame" x="147" y="279" width="261" height="126"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pPo-2m-Z2D" userLabel="redSlider">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pPo-2m-Z2D" userLabel="redSlider">
                                         <rect key="frame" x="-2" y="0.0" width="265" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
                                         <connections>
                                             <action selector="changeRGBView:" destination="BYZ-38-t0r" eventType="valueChanged" id="Xfy-wT-SbU"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ql0-U7-Vae" userLabel="greenSlider">
-                                        <rect key="frame" x="-2" y="55" width="265" height="31"/>
+                                    <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ql0-U7-Vae" userLabel="greenSlider">
+                                        <rect key="frame" x="-2" y="48" width="265" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <connections>
                                             <action selector="changeRGBView:" destination="BYZ-38-t0r" eventType="valueChanged" id="tsx-7G-XwR"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-ip-98Z" userLabel="blueSlider">
-                                        <rect key="frame" x="-2" y="110" width="265" height="31"/>
+                                        <rect key="frame" x="-2" y="96" width="265" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                         <connections>
                                             <action selector="changeRGBView:" destination="BYZ-38-t0r" eventType="valueChanged" id="JYW-1I-TsD"/>
@@ -103,7 +103,7 @@
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="iT3-uC-38u" firstAttribute="top" secondItem="0nL-KH-WEJ" secondAttribute="bottom" constant="45" id="ENd-7V-dYE"/>
-                            <constraint firstItem="dD4-A4-paS" firstAttribute="top" secondItem="0nL-KH-WEJ" secondAttribute="bottom" constant="30" id="GNA-3e-fwR"/>
+                            <constraint firstItem="dD4-A4-paS" firstAttribute="top" secondItem="0nL-KH-WEJ" secondAttribute="bottom" constant="37" id="GNA-3e-fwR"/>
                             <constraint firstItem="GEG-eW-Hwc" firstAttribute="leading" secondItem="iT3-uC-38u" secondAttribute="trailing" constant="17.666666666666657" id="Hnm-kT-91H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dD4-A4-paS" secondAttribute="trailing" constant="20" id="IvC-fB-ncN"/>
                             <constraint firstItem="dD4-A4-paS" firstAttribute="leading" secondItem="iT3-uC-38u" secondAttribute="trailing" constant="72" id="KEk-ef-DLZ"/>

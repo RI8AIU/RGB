@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var redLabel: UILabel!
@@ -28,7 +28,22 @@ class ViewController: UIViewController {
         setValueLabel()
         
     }
-
+    
+    @IBAction func changeRGBView(_ sender: UISlider) {
+        
+        switch sender.tag {
+        case 0:
+            redLabel.text = getValue(from: sender)
+        case 1:
+            greenLabel.text = getValue(from: sender)
+//        case 2:
+//            blueLabel.text = getValue(from: sender)
+        default:
+            blueLabel.text = getValue(from: sender)
+        }
+        setColorView()
+    }
+    
     private func setColorView() {
         colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value),
                                             green: CGFloat(greenSlider.value),
@@ -46,25 +61,4 @@ class ViewController: UIViewController {
     private func getValue(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
-
-    @IBAction func changeRGBView(_ sender: UISlider) {
-        
-        switch sender.tag {
-        case 0:
-            redLabel.text = getValue(from: sender)
-        case 1:
-            greenLabel.text = getValue(from: sender)
-        case 2:
-            blueLabel.text = getValue(from: sender)
-        default:
-            break
-        }
-       setColorView()
-    }
-    
 }
-    
-   
-
-
-
